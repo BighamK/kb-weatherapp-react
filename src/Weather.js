@@ -22,6 +22,6 @@ export default function Weather() {
                  </ul>
                  </div>
             </div>
-            </div>
+        </div>
     )
 }
