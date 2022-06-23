@@ -1,1 +1,46 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-size: cover;
+  background-image: url('./images/bkground.jpg');
+}
 
+h1 {
+  color: darkslategrey;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28.8px;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: darkslategrey;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+h4 {
+  text-align: center;
+  font-size: 16px;
+  color: orange;
+}
+
+h5 {
+  text-align: center;
+  font-size: 16px;
+  color: yellowgreen;
+}
