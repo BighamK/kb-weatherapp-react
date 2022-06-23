@@ -14,12 +14,13 @@ export default function Weather() {
                     <img 
                     src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Mostly Cloudy"/>50°F
                 </div>
-                <div className="col-6"></div>
-<ul>
-    <li>Precipitation</li>
-    <li>Humidity</li>
-    <li>Wind</li>
-</ul>
+                <div className="col-6">
+                  <ul>
+                      <li>Precipitation</li>
+                      <li>Humidity</li>
+                      <li>Wind</li>
+                 </ul>
+                 </div>
             </div>
             </div>
     )
