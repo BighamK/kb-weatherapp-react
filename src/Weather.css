@@ -7,3 +7,16 @@
     background-color: rgb(216, 236, 248);
     border-radius: 5px;
 }
+
+.Weather .temperature {
+    color: rgb(33, 33, 33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.Weather .unit {
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
