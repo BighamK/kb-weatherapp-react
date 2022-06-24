@@ -66,5 +66,7 @@ export default function Weather() {
     let city = "Portland";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}lat={lat}&lon={lon}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
-    }
+
+    return "Loading...";
+  }
 }
