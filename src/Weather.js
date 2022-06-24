@@ -3,7 +3,6 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-    
     const [weatherData, setWeatherData] = useState({ ready: false });
     function handleResponse(response) {
         setWeatherData({
@@ -47,7 +46,7 @@ export default function Weather() {
                     src={weatherData.iconUrl} 
                     alt={weatherData.description} 
                     />
-                    <span className="temperature">{Math.round(weatherData.main.temp)}</span>
+                    <span className="temperature">{Math.round(weatherData.temperature)}</span>
                      <span className="unit">°F</span>
                 </div>
                 <div className="col-6">
