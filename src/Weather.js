@@ -36,7 +36,7 @@ export default function Weather() {
                     </div>
                 </div>
             </form>
-            <h2>Current City</h2>
+            <h2>{weatherData.city.name}</h2>
             <ul>
                 <li>Date and Time</li>
                 <li>{weatherData.description}</li>
