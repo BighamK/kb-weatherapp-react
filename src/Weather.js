@@ -16,8 +16,6 @@ export default function Weather() {
             humidity: response.data.main.humidity,
             city: response.data.name
         });
-
-        setReady(true);
     }
    
     if (weatherData.ready) {
