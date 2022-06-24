@@ -64,7 +64,7 @@ export default function Weather() {
 
     const apiKey = "6a8171dcf4cbfa0f9704ad8a2b755aa0";
     let city = "Portland";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}lat={lat}&lon={lon}&appid=${apiKey}&units=imperial`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
