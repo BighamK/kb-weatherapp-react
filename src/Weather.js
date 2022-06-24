@@ -3,7 +3,8 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-    const [weatherData, setWeatherData] = useState({ ready: false });
+    const [weatherData, setWeatherData] = useState({ ready: true });
+    
     function handleResponse(response) {
         setWeatherData({
             ready: true,
@@ -35,7 +36,7 @@ export default function Weather() {
                     </div>
                 </div>
             </form>
-            <h1>{weatherData.city}</h1>
+            <h2>{weatherData.city}</h2>
             <ul>
                 <li>Date and Time</li>
                 <li>{weatherData.description}</li>
