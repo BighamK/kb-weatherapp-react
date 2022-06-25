@@ -12,16 +12,13 @@ export default function WeatherMain (props) {
     </ul>
     <div className="row mt-3">
         <div className="col-6">
-            <div className="d-flex">
             <img 
             src={props.data.iconUrl} 
             alt={props.data.description} 
             />
             <span className="temperature">{Math.round(props.data.temperature)}</span>
              <span className="unit">°F</span>
-             </div>
         </div>
-       
         <div className="col-6">
           <ul>
               <li>Precipitation: unknown</li>
