@@ -13,7 +13,8 @@ export default function Weather() {
             iconUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
             wind: response.data.wind.speed,
             humidity: response.data.main.humidity,
-            city: response.data.name
+            city: response.data.name,
+            date: "Friday 10:45"
         });
     }
    
@@ -38,8 +39,8 @@ export default function Weather() {
             </form>
             <h2>{weatherData.name}</h2>
             <ul>
-                <li>Date and Time</li>
-                <li>{weatherData.description}</li>
+                <li>{weatherData.date}</li>
+                <li className="text-capitalize">{weatherData.description}</li>
             </ul>
             <div className="row">
                 <div className="col-6">
