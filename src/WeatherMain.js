@@ -10,8 +10,9 @@ export default function WeatherMain (props) {
             <FormattedDate date={props.data.date} /></li>
         <li className="text-capitalize">{props.data.description}</li>
     </ul>
-    <div className="row">
+    <div className="row mt-3">
         <div className="col-6">
+            <div className="d-flex">
             <img 
             src={props.data.iconUrl} 
             alt={props.data.description} 
@@ -25,6 +26,7 @@ export default function WeatherMain (props) {
               <li>Humidity: {props.data.humidity} %</li>
               <li>Wind: {props.data.wind} mph</li>
          </ul>
+         </div>
          </div>
     </div>
     </div>
