@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import FormattedDate from "./FormattedDate";
+
+import WeatherMain from "./WeatherMain";
 import "./Weather.css";
 
 export default function Weather() {
@@ -38,29 +39,8 @@ export default function Weather() {
                     </div>
                 </div>
             </form>
-            <h2>{weatherData.name}</h2>
-            <ul>
-                <li>
-                    <FormattedDate date={weatherData.date} /></li>
-                <li className="text-capitalize">{weatherData.description}</li>
-            </ul>
-            <div className="row">
-                <div className="col-6">
-                    <img 
-                    src={weatherData.iconUrl} 
-                    alt={weatherData.description} 
-                    />
-                    <span className="temperature">{Math.round(weatherData.temperature)}</span>
-                     <span className="unit">°F</span>
-                </div>
-                <div className="col-6">
-                  <ul>
-                      <li>Precipitation: unknown</li>
-                      <li>Humidity: {weatherData.humidity} %</li>
-                      <li>Wind: {weatherData.wind} mph</li>
-                 </ul>
-                 </div>
-            </div>
+            <WeatherMain data={weatherData}/>
+
         </div>
     );
     } else {
