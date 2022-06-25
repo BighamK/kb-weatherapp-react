@@ -19,8 +19,9 @@ export default function WeatherMain (props) {
             />
             <span className="temperature">{Math.round(props.data.temperature)}</span>
              <span className="unit">°F</span>
+             </div>
         </div>
-        </div>
+       
         <div className="col-6">
           <ul>
               <li>Precipitation: unknown</li>
