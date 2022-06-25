@@ -29,12 +29,13 @@ export default function Weather(props) {
 
    function handleSubmit(event) {
        event.preventDefault();
-       search(city);
+       search();
    }
 
    function handleCityChange(event) {
 setCity(event.target.value);
    }
+   
 
 
     if (weatherData.ready) {
