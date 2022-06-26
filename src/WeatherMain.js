@@ -18,7 +18,7 @@ export default function WeatherMain (props) {
             src={props.data.iconUrl} 
             alt={props.data.description} 
             />
-           <TemperatureConv />
+           <TemperatureConv fahrenheit={props.data.temperature} />
         </div>
         <div className="col-6">
           <ul>
