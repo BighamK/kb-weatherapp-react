@@ -14,11 +14,15 @@ export default function WeatherMain (props) {
     </ul>
     <div className="row mt-3">
         <div className="col-6">
+            <div className="d-flex">
+                <div className="float-left">
             <img 
             src={props.data.iconUrl} 
             alt={props.data.description} 
             />
+            </div>
            <TemperatureConv fahrenheit={props.data.temperature} />
+        </div>
         </div>
         <div className="col-6">
           <ul>
