@@ -3,7 +3,7 @@ import React, { useState } from "react";
 export default function TemperatureConv(props) {
     const [unit, setUnit] = useState("fahrenheit");
 
-function showCelcius (event) {
+function showCelsius (event) {
     event.preventDefault();
     setUnit("celsius");
 }
@@ -13,6 +13,10 @@ function showFahrenheit(event) {
     setUnit("fahrenheit");
 }
 
+function celsius() {
+    return (props.fahrenheit - 32) * 5/9;
+}
+
 
     if (unit === "fahrenheit") {
 
@@ -20,14 +24,13 @@ function showFahrenheit(event) {
         <div className="TemperatureConv"> 
  <span className="temperature">{Math.round(props.fahrenheit)}</span>
              <span className="unit">°F | {" "}
-              <a href="/" onClick={showCelcius}>
+              <a href="/" onClick={showCelsius}>
                   °C</a>
                   </span>
 
         </div>
     );
 } else {
-    let celsius = (props.fahrenheit - 32) * 5/9; 
     return (
         <div className="TemperatureConv">
         <span className="temperature">{Math.round(celsius())}</span>
