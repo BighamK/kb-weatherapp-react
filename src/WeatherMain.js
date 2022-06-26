@@ -15,7 +15,7 @@ export default function WeatherMain (props) {
     <div className="row mt-3">
         <div className="col-6">
             <div className="d-flex">
-                <div className="float-left">
+                <div className="float-left mt-5">
             <img 
             src={props.data.iconUrl} 
             alt={props.data.description} 
