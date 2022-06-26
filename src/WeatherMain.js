@@ -21,7 +21,9 @@ export default function WeatherMain (props) {
             alt={props.data.description} 
             />
             </div>
+            <div className="mt-3">
            <TemperatureConv fahrenheit={props.data.temperature} />
+           </div>
         </div>
         </div>
         <div className="col-6">
