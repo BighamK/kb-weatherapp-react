@@ -2,9 +2,10 @@ import React from "react";
 import "./Forecast.css";
 import axios from "axios";
 
+
 export default function Forecast(props) {
 function handleResponse(response) {
-
+ console.log(response.data);
 }
 
 let apiKey = "6a8171dcf4cbfa0f9704ad8a2b755aa0";
