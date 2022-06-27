@@ -11,6 +11,7 @@ export default function Weather(props) {
     function handleResponse(response) {
         setWeatherData({
             ready: true,
+            coord: response.data.coord,
             temperature: response.data.main.temp,
             description: response.data.weather[0].description,
             iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
@@ -60,7 +61,7 @@ setCity(event.target.value);
                 </div>
             </form>
             <WeatherMain data={weatherData}/>
-            <Forecast />
+            <Forecast coordinates={Forecast.coordinates} />
 
         </div>
     );
