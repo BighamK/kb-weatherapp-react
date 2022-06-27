@@ -1,0 +1,5 @@
+
+
+//  apiKey:  "6a8171dcf4cbfa0f9704ad8a2b755aa0";
+
+// https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&app
