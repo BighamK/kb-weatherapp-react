@@ -6,12 +6,12 @@ export default function Forecast() {
         <div className="row">
 <div className="col-2">
     <div className="Daily">
-    Mon
+    Tues
     Sunny
     </div>
     <div className="Daily-temps">
         <span className="Daily-temp-max">80°</span>
-        <span className="Daily-temp-min"> | 55°</span>
+        <span className="Daily-temp-min">| 55°</span>
     </div>
     </div>
 </div>

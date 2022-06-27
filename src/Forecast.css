@@ -5,3 +5,7 @@
 .Daily-temp-max {
     font-weight: bold;
 }
+
+.Daily-temp-min {
+    margin-left: 5px;
+}
