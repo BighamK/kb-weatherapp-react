@@ -17,7 +17,9 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lo
 
 
 axios.get(apiUrl).then(handleResponse);
-    return ( <div className="Forecast">
+
+    return ( 
+    <div className="Forecast">
         <div className="row">
 <div className="col-2">
     <div className="Daily">
