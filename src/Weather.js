@@ -61,8 +61,8 @@ setCity(event.target.value);
                     </div>
                 </div>
             </form>
-            <WeatherMain data={weatherData}/>
-            <ForecastWeek coordinates={ForecastWeek.coordinates} />
+            <WeatherMain data={weatherData} />
+            <ForecastWeek coordinates={weatherData.coordinates} />
 
         </div>
     );
