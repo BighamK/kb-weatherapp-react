@@ -17,9 +17,16 @@ if (loaded) {
     return ( 
         <div className="Forecast">
             <div className="row">
-    <div className="col-2">
-        <ForecastDay data={forecast[0]} />
+                {forecast.map(function(dailyForecast, index) {
+                    if (index < 5) {
+                    return (
+               <div className="col-2" key={index}>
+
+        <ForecastDay data={dailyForecast} />
         </div>
+                );
+                    }
+            })}
         </div>
         </div>
         );
