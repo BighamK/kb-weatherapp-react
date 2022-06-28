@@ -9,3 +9,7 @@
 .Daily-temp-min {
     margin-left: 5px;
 }
+
+.ForecastDay-forecastIcon {
+    size: 20px;
+  }
