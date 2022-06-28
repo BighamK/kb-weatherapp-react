@@ -25,8 +25,8 @@ function day() {
 
 </div>
 <div className="Daily-temps">
-   <span className="Daily-temp-max">{maxTemperature()}°</span>
-    <span className="Daily-temp-min">| {minTemperature()}°</span>
+   <span className="Daily-temp-max">{maxTemperature()}</span>
+    <span className="Daily-temp-min">| {minTemperature()}</span>
 </div>
 </div>
     );
