@@ -17,19 +17,19 @@ if (loaded) {
     return ( 
         <div className="Forecast">
             <div className="row">
-                {forecast.map(function(dailyForecast, index) {
+                {forecast.map(function (dailyForecast, index) {
                     if (index < 5) {
                     return (
-               <div className="col-2" key={index}>
+               <div className="col" key={index}>
 
         <ForecastDay data={dailyForecast} />
         </div>
                 );
                     }
-            })}
-        </div>
-        </div>
-        );
+                })}
+                </div>
+            </div>
+            );
 } else {
     let apiKey = "6a8171dcf4cbfa0f9704ad8a2b755aa0";
     let longitude = props.coordinates.lon;
@@ -38,6 +38,6 @@ if (loaded) {
     
     
     axios.get(apiUrl).then(handleResponse);
-    
+    return null;
 }
 }
