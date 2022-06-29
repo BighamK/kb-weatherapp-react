@@ -14,6 +14,7 @@
     font-size: 20px;
   }
   
-.forecastIcon {
-    font-size: 20px;
+.forecastIcon img {
+    height: 20px;
+    width: 20px;
   }
