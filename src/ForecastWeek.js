@@ -20,7 +20,7 @@ function handleResponse(response) {
 
 if (loaded) {
     return ( 
-        <div className="Forecast">
+        <div className="Forecast-week">
             <div className="row">
                 {forecast.map(function (dailyForecast, index) {
                     if (index < 5) {

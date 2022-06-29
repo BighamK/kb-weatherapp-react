@@ -9,3 +9,11 @@
 .Daily-temp-min {
     margin-left: 5px;
 }
+
+.Forecast-week {
+    font-size: 20px;
+  }
+  
+.forecastIcon {
+    font-size: 20px;
+  }
