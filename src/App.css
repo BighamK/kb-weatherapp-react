@@ -51,4 +51,10 @@ h5 {
   color: yellowgreen;
 }
 
+.Forecast-week {
+  font-size: 13px;
+}
 
+.forecastIcon {
+  font-size: 13;
+}
