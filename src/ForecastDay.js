@@ -26,7 +26,7 @@ function day() {
         <div className="Daily">{day()}
 
 </div>
-<img className="Forecast-icon" size={15} src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.weather[0].description} width={40}/>
+<img className="Forecast-icon" size={15} src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.weather[0].description} width={45}/>
 <div className="Daily-temps">
    <span className="Daily-temp-max">{maxTemperature()}</span>
     <span className="Daily-temp-min">| {minTemperature()}</span>
