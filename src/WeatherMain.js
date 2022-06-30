@@ -28,7 +28,7 @@ export default function WeatherMain (props) {
         </div>
         <div className="col-6">
           <ul>
-              <li>Precipitation: </li>
+              <li>Precipitation: {props.data.precipitation.mode} </li>
               <li>Humidity: {props.data.humidity} %</li>
               <li>Wind: {props.data.wind} mph</li>
          </ul>
