@@ -25,7 +25,7 @@ if (loaded) {
                 {forecast.map(function (dailyForecast, index) {
                     if (index < 5) {
                     return (
-               <div className="col" key={index} size={15}>
+               <div className="col" key={index}>
 
         <ForecastDay data={dailyForecast} />
         </div>
