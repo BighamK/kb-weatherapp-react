@@ -23,7 +23,7 @@ function day() {
 
     return (
         <div>
-        <div className="Daily">{day()}
+        <div className="Daily text-center">{day()}
 
 </div>
 <img className="Forecast-icon" size={15} src={`http://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt={props.data.weather[0].description} width={45}/>
